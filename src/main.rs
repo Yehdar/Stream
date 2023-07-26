@@ -18,7 +18,16 @@ fn consumer() -> Html {
     }
 }
 
+#[function_component(App)]
+fn app() -> Html {
+    html! {
+        <div class="grid">
+            <Producer/>
+            <Consumer/>
+        </div>
+    }
+}
+
 fn main() {
-    yew::Renderer::<Producer>::new().render();
-    yew::Renderer::<Consumer>::new().render();
+    yew::Renderer::<App>::new().render();
 }
