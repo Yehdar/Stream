@@ -1,7 +1,10 @@
 use yew::prelude::*;
+use web_sys::*;
 
 #[function_component(Producer)]
 fn producer() -> Html {
+    let navigator: Navigator = window().unwrap().navigator();
+    let media_devices: MediaDevices = navigator.media_devices().unwrap();
     html! {
     <div class="producer">
         <h3>{"Producer"}</h3>
