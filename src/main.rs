@@ -1,13 +1,23 @@
 use yew::prelude::*;
 use web_sys::*;
+use wasm_bindgen::JsCast;
 
 #[function_component(Producer)]
 fn producer() -> Html {
-    let navigator: Navigator = window().unwrap().navigator();
-    let media_devices: MediaDevices = navigator.media_devices().unwrap();
+    let navigator = window().unwrap().navigator();
+    let media_devices = navigator.media_devices().unwrap();
+    let video_element = window()
+        .unwrap()
+        .document()
+        .unwrap()
+        .get_element_by_id("webcam")
+        .unwrap()
+        .unchecked_into::<web_sys::HtmlVideoElement>();
+
     html! {
     <div class="producer">
         <h3>{"Producer"}</h3>
+        <video autoplay=true id="webcam"></video>
     </div>
     }
 }
