@@ -1,6 +1,6 @@
 use yew::prelude::*;
 use web_sys::*;
-use wasm_bindgen::JsCast;
+use wasm_bindgen::*;
 
 #[function_component(Producer)]
 fn producer() -> Html {
@@ -13,6 +13,13 @@ fn producer() -> Html {
         .get_element_by_id("webcam")
         .unwrap()
         .unchecked_into::<web_sys::HtmlVideoElement>();
+
+    let mut constraints = MediaStreamConstraints::new();
+    constraints.video(&JsValue::from(true));
+
+    let devices_query = media_devices
+        .get_user_media_with_constraints(&constraints)
+        .unwrap();
 
     html! {
     <div class="producer">
