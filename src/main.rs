@@ -3,8 +3,6 @@ use web_sys::*;
 use wasm_bindgen::*;
 #[function_component(Producer)]
 fn producer() -> Html {
-    // ... your existing code ...
-
     html! {
         <div class="producer">
             <h3>{"Producer"}</h3>

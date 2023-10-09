@@ -633,7 +633,7 @@ async function __wbg_init(input) {
     if (wasm !== undefined) return wasm;
 
     if (typeof input === 'undefined') {
-        input = new URL('yew-video-stream-9a0200742cd9c8f6_bg.wasm', import.meta.url);
+        input = new URL('yew-video-stream-ff7eb71f251fde6c_bg.wasm', import.meta.url);
     }
     const imports = __wbg_get_imports();
 
