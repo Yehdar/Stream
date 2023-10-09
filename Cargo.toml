@@ -15,4 +15,5 @@ features = [
   "Navigator",
   "MediaDevices",
   "HtmlVideoElement",
+  "MediaStreamConstraints",
 ]
