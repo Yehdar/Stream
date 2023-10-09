@@ -3,17 +3,15 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   text-align: center;
   font-size: 30px;
-  height: 300px;
+  height: 100vh;
 }
 
 .producer {
-  background-color: red;
+  background-color: darkred;
   color: white;
-  padding: 10px;
 }
 
 .consumer {
-  background-color: blue;
+  background-color: darkblue;
   color: white;
-  padding: 10px;
 }

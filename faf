@@ -1,0 +1,146 @@
+[33mcommit 72a1995a325944b9ebfc93177d55c79d85919f2f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Mon Oct 9 12:22:11 2023 -0400
+
+    Revert "import MediaStreamConstraints to request access to user's media devices"
+    
+    This reverts commit ee498949bbf36362981b81dc441e937eba0643d2.
+
+[33mcommit b1ee9402c6b181dfddcc34b145dd9290d8974f5c[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Mon Oct 9 12:00:30 2023 -0400
+
+    refactor: remove boiler media stream code
+    
+    starting at square one again
+
+[33mcommit a926d00cc3cdcdfe7436961d7b0db02447332357[m
+Author: Radhey Patel <108688044+Yehdar@users.noreply.github.com>
+Date:   Fri Oct 6 18:13:46 2023 -0400
+
+    temporarily improve README presentation
+
+[33mcommit 115ce53ef45a1f66cb855958ca76bb3aebebb091[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Fri Jul 28 10:46:41 2023 -0400
+
+    feat: request access to user's video stream
+    
+    basically, i created a new 'MediaStreamConstraints' object and then set video constraint to true, which asks the user that we want access to their webcam. After, I officially request access by passing it as an argument in the 'get_user_media_with_constraints' method
+
+[33mcommit ee498949bbf36362981b81dc441e937eba0643d2[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Fri Jul 28 10:43:26 2023 -0400
+
+    import MediaStreamConstraints to request access to user's media devices
+
+[33mcommit 5c1f266a570e95ce8afbd8c9f9025b59118b6453[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Fri Jul 28 10:33:56 2023 -0400
+
+    add video element retrieval and type conversion
+    
+    get the video element with the ID webcam from DOM and convert it into HtmlVideoElement using the unchecked_into method. Basically, this commit enables me to play around with the video
+
+[33mcommit 0c6643a2aff867450dde8a828a4c33f6266c2a5d[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Fri Jul 28 10:31:22 2023 -0400
+
+    import HtmlVideoElement to control video playback
+
+[33mcommit 2c24ccd2778d62d4b436743dba98f9f75e96f8a0[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Thu Jul 27 10:50:33 2023 -0400
+
+    feat: query the media devices with web-sys library
+
+[33mcommit 9197be6c2152988e55db92d9e7192a040e5e1af0[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Thu Jul 27 10:48:06 2023 -0400
+
+    import web-sys library to interact with JS APIs
+
+[33mcommit 07e6a2a5c46682edce3790397d3a962118cd26c1[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Thu Jul 27 10:46:53 2023 -0400
+
+    add packages from web_sys library
+
+[33mcommit 2768d28b6d937eca691851708161b61f463d514d[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Wed Jul 26 11:01:48 2023 -0400
+
+    style: fix css styling for better debugging
+
+[33mcommit 958748ccae7b22570cab0476ffa9176cd44de51f[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Wed Jul 26 10:47:03 2023 -0400
+
+    refactor: add component composition for better readability and scaling
+
+[33mcommit a6324b7f7de60752ec3ab772e8d60e91e5cc90dd[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Wed Jul 26 10:37:08 2023 -0400
+
+    add producer and consumer components
+
+[33mcommit 44e7da2eab3382dc7516f19ed9fc2646a63e520c[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Wed Jul 26 10:36:51 2023 -0400
+
+    add styling for easier debugging
+
+[33mcommit ee9198089e707194571409cfeac19ec5aaa92ed7[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Wed Jul 26 10:36:28 2023 -0400
+
+    build: add production-ready compiled code
+
+[33mcommit ae4439e06857ec14ccebca16b2c18574148f80c7[m
+Author: Radhey Patel <108688044+Yehdar@users.noreply.github.com>
+Date:   Mon Jul 24 14:10:13 2023 -0400
+
+    Create README.md
+
+[33mcommit bd55cc57e00f0652022060384d093b83c1d11f1f[m
+Merge: 8ba7b32 3ec2981
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Mon Jul 24 14:07:36 2023 -0400
+
+    merge divergent branches
+
+[33mcommit 8ba7b32509bff02835f650c18d1fd61490c63b47[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Mon Jul 24 13:56:08 2023 -0400
+
+    add packages
+
+[33mcommit 3ec2981ea870979186c71aadceed7d38a861e678[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Mon Jul 24 13:56:08 2023 -0400
+
+    add packages
+
+[33mcommit cb4c2e1aff7f8aff9c8da9d0f9b28111248fa598[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Mon Jul 24 13:55:32 2023 -0400
+
+    first commit
+
+[33mcommit 081ff195e66df6d71d82252980b3acbc45271500[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Mon Jul 24 13:55:15 2023 -0400
+
+    refactor boilerplate
+
+[33mcommit 66cf6e7b09385e495ecbf7f72a28e3f517ce08aa[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Mon Jul 24 13:54:33 2023 -0400
+
+    add yew dependency
+
+[33mcommit b44daaa9bd85c06915620b15d3c0d01fdb01ce33[m
+Author: Yehdar <p.radhey06@gmail.com>
+Date:   Sat Jul 22 20:05:43 2023 -0400
+
+    first commit
