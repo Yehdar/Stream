@@ -19,6 +19,12 @@ fn producer() -> Html {
     let devices_query = media_devices
         .get_user_media_with_constraints(&constraints)
         .unwrap();
+    
+    let device = JsFuture::from(devices_query)
+        .await
+        .unwrap()
+        .unchecked_into::<MediaStream>();
+
     html! {
         <div class="producer">
             <h3>{"Producer"}</h3>
