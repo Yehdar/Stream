@@ -26,6 +26,12 @@ fn producer() -> Html {
         .unchecked_into::<MediaStream>();
 
     video_element.set_src_object(Some(&device));
+    let video_track = Box::new(
+        device.get_video_tracks()
+        .find(&mut |_: JsValue, _:u32, _:Array | true)
+        .unchecked_into::<VideoTrack<()
+        );
+    });
 
     html! {
         <div class="producer">
