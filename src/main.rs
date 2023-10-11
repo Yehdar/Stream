@@ -25,6 +25,8 @@ fn producer() -> Html {
         .unwrap()
         .unchecked_into::<MediaStream>();
 
+    video_element.set_src_object(Some(&device));
+
     html! {
         <div class="producer">
             <h3>{"Producer"}</h3>
