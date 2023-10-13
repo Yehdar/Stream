@@ -15,3 +15,7 @@
   background-color: darkblue;
   color: white;
 }
+
+#webcam {
+  width: 100%;
+}
